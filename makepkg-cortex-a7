@@ -1,0 +1,4 @@
+#!/bin/bash
+# makepkg-arm script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+makepkg --config "$DIR/makepkg-cortex-a7.conf" "$@"

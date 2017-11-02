@@ -1,0 +1,2 @@
+#!/bin/bash
+java -jar "$HOME/bin/jd-gui-1.4.0.jar" $@
