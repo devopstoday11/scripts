@@ -25,7 +25,7 @@ done
 
 convert "$infile" \
 	-font Arial -pointsize 50 -draw \
-	"translate 0,-800  rotate -30 gravity north fill black fill-opacity 0.08 text 0,12 '$str'" \
+	"translate 0,-800  rotate -30 gravity north fill-opacity 0.08 fill black text 0,12 '$str'" \
 	"$outfile"
 
 if [ $(which steghide) ]; then
