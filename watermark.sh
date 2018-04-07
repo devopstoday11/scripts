@@ -18,7 +18,7 @@ for l in `seq 1 50`; do
 done
 
 str=""
-newl=$'\n'
+newl=$(printf '\n')
 for l in `seq 1 50`; do
 	str="$str$rowstr$newl"
 done
