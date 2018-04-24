@@ -1,0 +1,6 @@
+#!/bin/sh
+
+exec scanimage -d net:192.168.0.11:genesys \
+		-p --resolution 150 --swdeskew --swcrop --swdespeck --despeck 4 \
+		--mode col -p --format=png \
+	| convert -grayscale rec709luma -level 0,75% - -
